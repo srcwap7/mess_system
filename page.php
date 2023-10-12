@@ -72,7 +72,7 @@
                 echo "CONNECTION UNSUCCESSFULL".PHP_EOL;
             }
             else{
-                $tablename="12240280";
+                $tablename=$_SESSION['id'];
                 $query="SELECT * FROM `$tablename`;";
                 $result=$connection->query($query);
                 while ($row=$result->fetch_assoc()){
